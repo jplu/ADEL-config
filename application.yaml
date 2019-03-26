@@ -1,0 +1,21 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  level:
+    org.zalando.logbook: TRACE
+    org.springframework: INFO
+    fr.eurecom.adel.recognition: ERROR
+    org.reflections.Reflections: ERROR
+    edu.stanford: ERROR
+    fr.eurecom.adel: ERROR
+    fr.eurecom.adel.commons.format: INFO
+    org.apache: ERROR
+    org.jline: ERROR
+
+spring:
+  main:
+    banner-mode: console

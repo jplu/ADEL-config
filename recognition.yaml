@@ -1,0 +1,20 @@
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+
+recognition:
+  tweetnormalization:
+    usermention: HTTPQuery
+    hashtag: Dictionary
+    activate: true
+  annotators:
+    - annotator: StanfordCoreNLP
+      name: fullpipeline
+      address: classpath:stanford-full-en.properties
+      from: CoNLL
+      tokenizer: true
+  mentionoverlapping: Merge
+  typeoverlapping:
+    method: MajorityVoting
+    to: CoNLL0203
+    priority: [fullpipeline]
