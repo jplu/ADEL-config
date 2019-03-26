@@ -1,3 +1,6 @@
+server:
+  port: 0
+
 info:
   app:
     name: ADEL API
