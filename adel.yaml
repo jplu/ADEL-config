@@ -1,7 +1,13 @@
+spring:
+  profiles:
+    active: en
+
 eureka:
   instance:
-    instance-id: ${spring.application.name}:${random.uuid}
-
+    instance-id: ${spring.application.name}-${spring.profiles.active}:${random.uuid}
+---
+spring:
+  profile: en
 recognition:
   tweetnormalization:
     usermention: HTTPQuery
