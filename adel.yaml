@@ -1,7 +1,3 @@
-spring:
-  profiles:
-    active: en
-
 eureka:
   instance:
     instance-id: ${spring.application.name}-${spring.profiles.active}:${random.uuid}
