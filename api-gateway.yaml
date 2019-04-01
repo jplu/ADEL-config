@@ -1,5 +1,2 @@
 server:
   port: 9004
-
-zuul:
-  prefix: /adel
