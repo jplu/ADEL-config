@@ -1,2 +1,6 @@
 server:
   port: 9004
+
+zuul:
+  routes:
+    adel: /
