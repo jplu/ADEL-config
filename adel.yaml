@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ${spring.application.name}-${spring.profiles.active}
+    name: adel-${spring.profiles.active}
 
 eureka:
   instance:
