@@ -20,7 +20,7 @@ logging:
     org.reflections.Reflections: ERROR
     edu.stanford: ERROR
     fr.eurecom.adel: ERROR
-    fr.eurecom.adel.commons.format.*: INFO
+    fr.eurecom.adel.commons.format: INFO
     org.apache: ERROR
     org.jline: ERROR
 
