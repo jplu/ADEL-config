@@ -22,5 +22,5 @@ recognition:
   mentionoverlapping: Merge
   typeoverlapping:
     method: MajorityVoting
-    to: CoNLL0203
+    to: CoNLL
     priority: [fullpipeline]
