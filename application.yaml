@@ -17,7 +17,6 @@ logging:
   level:
     org.zalando.logbook: TRACE
     org.springframework: INFO
-    fr.eurecom.adel.recognition: ERROR
     org.reflections.Reflections: ERROR
     edu.stanford: ERROR
     fr.eurecom.adel: ERROR
