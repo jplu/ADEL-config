@@ -17,7 +17,7 @@ recognition:
     - annotator: StanfordCoreNLP
       name: fullpipeline
       address: classpath:stanford-full-en.properties
-      from: CoNLL
+      from: MUC
       tokenizer: true
   mentionoverlapping: Merge
   typeoverlapping:
