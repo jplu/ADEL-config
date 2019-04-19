@@ -1,6 +1,14 @@
 server:
   port: 9004
 
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
 zuul:
   routes:
     adel: /adel/**
