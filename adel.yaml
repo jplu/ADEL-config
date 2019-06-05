@@ -19,6 +19,11 @@ recognition:
       address: classpath:stanford-full-en.properties
       from: MUC
       tokenizer: true
+    - annotator: JSONAPI
+      name: DeepNER
+      address: http://localhost/api/ner/recognize
+      from: CoNLL
+      tokenizer: false
   mentionoverlapping: Merge
   typeoverlapping:
     method: MajorityVoting
