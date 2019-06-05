@@ -28,4 +28,4 @@ recognition:
   typeoverlapping:
     method: MajorityVoting
     to: CoNLL
-    priority: [fullpipeline]
+    priority: [fullpipeline,DeepNER]
