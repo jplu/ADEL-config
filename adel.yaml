@@ -5,6 +5,7 @@ spring:
 eureka:
   instance:
     instance-id: ${spring.application.name}:${random.uuid}
+
 ---
 spring:
   profile: en
@@ -29,6 +30,7 @@ recognition:
     method: MajorityVoting
     to: CoNLL
     priority: [fullpipeline,DeepNER]
+
 ---
 spring:
   profile: fr
