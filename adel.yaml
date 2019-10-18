@@ -49,4 +49,4 @@ recognition:
   typeoverlapping:
     method: MajorityVoting
     to: CoNLL
-    priority: [DeepNER]
+    priority: DeepNER
