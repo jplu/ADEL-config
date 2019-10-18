@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: adel-${spring.profiles.active}
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+
+---
+spring:
+  profile: en
+recognition:
+  tweetnormalization:
+    usermention: HTTPQuery
+    hashtag: Dictionary
+    activate: false
+  annotators:
+    - annotator: JSONAPI
+      name: DeepNER
+      address: ${DEEPNER_URI:http://localhost/api/recognize}
+      from: CoNLL
+      tokenizer: true
+  mentionoverlapping: Merge
+  typeoverlapping:
+    method: MajorityVoting
+    to: CoNLL
+    priority: [DeepNER]
