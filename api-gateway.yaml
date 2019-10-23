@@ -7,11 +7,11 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 1000000
 
 ribbon:
-  ConnectTimeout: 10000
-  ReadTimeout: 10000
+  ConnectTimeout: 60000
+  ReadTimeout: 60000
   eager-load:
     enabled: true
 
