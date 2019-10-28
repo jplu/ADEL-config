@@ -17,7 +17,7 @@ recognition:
   annotators:
     - annotator: JSONAPI
       name: DeepNER
-      address: ${DEEPNER_URI:http://localhost/api/recognize}
+      address: ${DEEPNER_URI:http://localhost/api/}
       from: CoNLL
       tokenizer: true
   mentionoverlapping: Merge
